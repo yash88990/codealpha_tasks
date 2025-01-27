@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+
+    <!-- Motivation Quote -->
+    <div class="quote-container">
+      <p id="motivationQuote">"The only way to do great work is to love what you do." - Steve Jobs</p>
+    </div>
+
+    <!-- Task Input Section -->
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <select id="taskPriority">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+      <p id="progressText">0% Complete</p>
+    </div>
+
+    <!-- Tabs for Task Filtering -->
+    <div class="tabs">
+      <button class="tab-button active" data-category="all">All Tasks</button>
+      <button class="tab-button" data-category="high">High Priority</button>
+      <button class="tab-button" data-category="medium">Medium Priority</button>
+      <button class="tab-button" data-category="low">Low Priority</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
